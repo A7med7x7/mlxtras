@@ -1,24 +1,24 @@
-# Flint
+# mlxtend
 
-Flint is a machine learning library I designed to iterate a fast baseline, reuse my custome code when doing machine learning workload, and boost my productivity. It builds upon popular libraries like scikit-learn, pandas, and NumPy to streamline common machine learning workflows.
-
+mlxtend is a machine learning utility library for feature engineering, model validation, reporting, and MLflow experiment tracking. It provides reusable helpers for pandas, scikit-learn, LightGBM, and time-series workflows.
 
 ### How it started
-I was adviced by my mentor to build a python pacakge back in 2023 whatever it is and that I would learn a lot from it, and I said to myself: I'm building something I will use and actively learn from.
+This library began as a personal project to learn Python packaging and create reusable tools for common machine learning workflows. It is designed to help you iterate quickly on baselines, validate models, and standardize data science tasks.
+
 ## Features
 
-- Feature selection and evaluation tools
-- Time series analysis utilities
-- Ensemble methods
-- Reporting functions for data analysis
-- Project setup utilities
+- Feature selection and model validation utilities
+- Time series feature engineering and plotting helpers
+- Ensemble and reporting utilities
+- MLflow experiment logging helpers
+- Data validation and preprocessing tools
 
 ## Installation
 
-You can install Flint using pip:
+You can install mlxtend using pip:
 
 ```bash
-pip install flint
+pip install mlxtend
 ```
 
 ## Acknowledgments

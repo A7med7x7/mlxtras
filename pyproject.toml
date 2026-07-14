@@ -3,11 +3,12 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "flint"
+name = "mlxtend"
 version = "0.0.1"
-description = "flint is a machine learning library"
+description = "mlxtend is a machine learning utility library for feature engineering, model validation, reporting, and MLflow logging."
 readme = "README.md"
 requires-python = ">=3.8"
+keywords = ["machine learning", "feature engineering", "time series", "mlflow", "data validation", "reporting"]
 authors = [
     {name = "Ahmed Alghali", email = "Ahmed@OffSecHQ.com"}
 ]
@@ -19,6 +20,8 @@ dependencies = [
     "lightgbm",
     "tqdm",
     "scipy",
+    "matplotlib",
+    "seaborn",
     "mlflow"
 ]
 
@@ -35,5 +38,5 @@ license = "MIT"
 Homepage = "https://github.com/a7med7x7/flint/"
 
 [tool.setuptools.packages.find]
-include = ["flint", "flint.*"]
+include = ["mlxtend", "mlxtend.*"]
 exclude = ["tests", "flintvenv", "experments"]
