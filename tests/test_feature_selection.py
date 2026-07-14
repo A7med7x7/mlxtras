@@ -1,1 +1,1 @@
-from mlxtend.mlflow import mlflow_log
+from mlxtras.mlflow import mlflow_log

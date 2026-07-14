@@ -3,9 +3,9 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "mlxtend"
+name = "mlxtras"
 version = "0.0.1"
-description = "mlxtend is a machine learning utility library for feature engineering, model validation, reporting, and MLflow logging."
+description = "mlxtras is a machine learning utility library for feature engineering, model validation, reporting, and MLflow logging."
 readme = "README.md"
 requires-python = ">=3.8"
 keywords = ["machine learning", "feature engineering", "time series", "mlflow", "data validation", "reporting"]
@@ -38,5 +38,5 @@ license = "MIT"
 Homepage = "https://github.com/a7med7x7/flint/"
 
 [tool.setuptools.packages.find]
-include = ["mlxtend", "mlxtend.*"]
+include = ["mlxtras", "mlxtras.*"]
 exclude = ["tests", "flintvenv", "experments"]

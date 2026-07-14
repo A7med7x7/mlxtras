@@ -1,6 +1,6 @@
-# mlxtend
+# mlxtras
 
-mlxtend is a machine learning utility library for feature engineering, model validation, reporting, and MLflow experiment tracking. It provides reusable helpers for pandas, scikit-learn, LightGBM, and time-series workflows.
+mlxtras is a machine learning utility library for feature engineering, model validation, reporting, and MLflow experiment tracking. It provides reusable helpers for pandas, scikit-learn, LightGBM, and time-series workflows.
 
 ### How it started
 This library began as a personal project to learn Python packaging and create reusable tools for common machine learning workflows. It is designed to help you iterate quickly on baselines, validate models, and standardize data science tasks.
@@ -15,10 +15,10 @@ This library began as a personal project to learn Python packaging and create re
 
 ## Installation
 
-You can install mlxtend using pip:
+You can install mlxtras using pip:
 
 ```bash
-pip install mlxtend
+pip install mlxtras
 ```
 
 ## Acknowledgments
