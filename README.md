@@ -3,7 +3,7 @@
 mlxtras is a machine learning utility library for feature engineering, model validation, reporting, and MLflow experiment tracking. It provides reusable helpers for pandas, scikit-learn, LightGBM, and time-series workflows.
 
 ### How it started
-This library began as a personal project to learn Python packaging and create reusable tools for common machine learning workflows. It is designed to help you iterate quickly on baselines, validate models, and standardize data science tasks.
+This library began back in 2023 as a personal side quest pointed by my mentor to learn Python packaging and how python projects are created. so I said why not desin it to help me iterate quickly on baselines, validate models, reuse my custom functions and track experiments.
 
 ## Features
 
