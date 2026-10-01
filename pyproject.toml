@@ -34,8 +34,12 @@ classifiers = [
 ]
 license = "MIT"
 
+[project.optional-dependencies]
+# NVIDIA GPU logging in mlxtras.mlflow.log_gpu; provides the `pynvml` module
+gpu = ["nvidia-ml-py"]
+
 [project.urls]
-Homepage = "https://github.com/a7med7x7/flint/"
+Homepage = "https://github.com/a7med7x7/mlxtras/"
 
 [tool.setuptools.packages.find]
 include = ["mlxtras", "mlxtras.*"]

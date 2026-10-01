@@ -9,6 +9,9 @@ __pycache__/
 #expermentation notebook & python files 
 experments
 practice.py
+# MLflow stores created by playground scripts
+mlruns/
+mlartifacts/
 
 #venv 
 flintvenv
