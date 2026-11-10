@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mlxtras"
-version = "0.0.1"
+version = "0.0.2"
 description = "mlxtras is a machine learning utility library for feature engineering, model validation, reporting, and MLflow logging."
 readme = "README.md"
 requires-python = ">=3.8"
