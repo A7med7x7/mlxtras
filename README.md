@@ -3,7 +3,7 @@
 [![CI](https://img.shields.io/github/actions/workflow/status/A7med7x7/mlxtras/ci.yml?branch=main&label=CI)](https://github.com/A7med7x7/mlxtras/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/mlxtras.svg)](https://pypi.org/project/mlxtras/)
 
-mlxtras provides helpers for data preprocessing, model validation, and MLflow experiment tracking. It collects recurring boilerplate across pandas, scikit-learn, and LightGBM workflows into small, focused functions.
+Mlxtras is a Python utility library with helpers for data processing, model validation, and MLflow experiment tracking. It collects recurring boilerplate across pandas, scikit-learn, and LightGBM workflows into small functions.
 
 ### How it started
 
