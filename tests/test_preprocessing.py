@@ -29,3 +29,19 @@ def test_reduce_memory_usage_preserves_original_dataframe_when_copy_false():
 
     assert result is df
     assert result["value"].dtype == np.int8
+
+
+def test_reduce_memory_usage_handles_booleans_and_non_converted_strings():
+    df = pd.DataFrame(
+        {
+            "flag": [True, False, True],
+            "text": ["foo", "bar", "baz"],
+            "dates": pd.date_range("2026-01-01", periods=3),
+        }
+    )
+
+    result = reduce_memory_usage(df, convert_object_to_category=False)
+
+    assert result["flag"].dtype == bool
+    assert result["dates"].dtype.name.startswith("datetime64")
+    assert result["text"].dtype == "object" or str(result["text"].dtype).startswith("str")

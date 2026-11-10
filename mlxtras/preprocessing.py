@@ -42,20 +42,19 @@ def reduce_memory_usage(
         df = df.copy()
 
     for column in df.columns:
-        column_dtype = df[column].dtype.name
+        column_dtype = str(df[column].dtype.name)
 
-        if column_dtype in {"datetime64[ns]", "category"}:
+        if column_dtype.startswith("datetime") or column_dtype == "category":
             continue
 
-        if column_dtype == "object":
+        if column_dtype == "object" or column_dtype.startswith("str"):
             if convert_object_to_category:
                 df[column] = df[column].astype("category")
             continue
 
-        minimum = df[column].min()
-        maximum = df[column].max()
-
-        if str(column_dtype).startswith("int"):
+        if column_dtype.startswith("int"):
+            minimum = df[column].min()
+            maximum = df[column].max()
             if minimum >= np.iinfo(np.int8).min and maximum <= np.iinfo(np.int8).max:
                 df[column] = df[column].astype(np.int8)
             elif minimum >= np.iinfo(np.int16).min and maximum <= np.iinfo(np.int16).max:
@@ -64,7 +63,9 @@ def reduce_memory_usage(
                 df[column] = df[column].astype(np.int32)
             elif minimum >= np.iinfo(np.int64).min and maximum <= np.iinfo(np.int64).max:
                 df[column] = df[column].astype(np.int64)
-        else:
+        elif column_dtype.startswith("float"):
+            minimum = df[column].min()
+            maximum = df[column].max()
             if minimum >= np.finfo(np.float16).min and maximum <= np.finfo(np.float16).max:
                 df[column] = df[column].astype(np.float16)
             elif minimum >= np.finfo(np.float32).min and maximum <= np.finfo(np.float32).max:
